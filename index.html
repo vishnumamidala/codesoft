@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishnuchaithanya Mamidala — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo-text">Online Portfolio</div>
+        <div class="logo-sub">Just another My Blog site</div>
+      </div>
+
+      <button id="nav-toggle">☰</button>
+
+      <nav id="site-nav" class="site-nav">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT ME</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#resume">RESUME</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION (IMAGE REMOVED) -->
+  <section id="home" class="hero">
+    <div class="container">
+
+      <div class="hero-left">
+        <h1 class="hero-title">VISHNUCHAITHANYA<br><span class="surname">MAMIDALA</span></h1>
+        <p class="hero-subtitle">FULL-STACK DEVELOPER</p>
+        <p class="hero-desc">
+          B.Tech 3rd year student. Worked as Front End Developer at Vdit Media Agency —
+          a design-minded developer who loves building clean and responsive user interfaces.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contact">Hire Me</a>
+          <a class="btn btn-outline" href="#resume">Download Resume</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION (IMAGE REMOVED) -->
+  <section id="about" class="about section">
+    <div class="container">
+
+      <div class="about-text">
+        <h2>ABOUT ME</h2>
+        <p class="lead">
+          I am a B.Tech 3rd year student and a Full-Stack Developer. I worked as a Front End Developer
+          at Vdit Media Agency where I focused on crafting responsive landing pages and clean UI designs.
+        </p>
+
+        <p>
+          A design-oriented developer — I love building modern interfaces, improving UI performance,
+          and shipping well-organized code.
+        </p>
+
+        <div class="small-cta">
+          <a class="btn btn-primary" href="#projects">See Projects</a>
+          <a class="btn btn-outline"
+             href="https://drive.google.com/uc?export=download&id=1gTrU-SgL5Ls7f0B5Byvg24wTkG5TSI-l"
+             target="_blank">Download Resume</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-sub">Technologies & languages I use</p>
+
+      <ul class="skill-list">
+        <li class="skill">HTML</li>
+        <li class="skill">CSS</li>
+        <li class="skill">JavaScript</li>
+        <li class="skill">Python</li>
+        <li class="skill">Java</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">My recent work</p>
+
+      <div class="project-cards">
+
+        <article class="project">
+          <div class="project-body">
+            <h3 class="project-title">Vdit Media Agency — Landing Page</h3>
+            <p class="project-desc">
+              Built a clean and responsive landing page with modern layout and strong design elements.
+            </p>
+
+            <div class="project-links">
+              <a class="btn btn-outline" href="https://vdit.my.canva.site/vortex" target="_blank">
+                View Live
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME SECTION -->
+  <section id="resume" class="section resume">
+    <div class="container resume-grid">
+
+      <div>
+        <h2 class="section-title">Resume</h2>
+        <p class="section-sub">Download my resume</p>
+        <a class="btn btn-primary"
+          href="https://drive.google.com/uc?export=download&id=1gTrU-SgL5Ls7f0B5Byvg24wTkG5TSI-l"
+          target="_blank">Download Resume (PDF)</a>
+      </div>
+
+      <div class="resume-highlight">
+        <h3>Highlights</h3>
+        <ul>
+          <li>B.Tech — 3rd Year</li>
+          <li>Frontend Developer — Vdit Media Agency</li>
+          <li>UI/UX & Performance Focused</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container contact-grid">
+
+      <div>
+        <h2 class="section-title">Contact</h2>
+        <p>If you'd like to work with me, feel free to reach out.</p>
+        <p><strong>Email:</strong>
+          <a href="mailto:vishnumamidala07@gmail.com">vishnumamidala07@gmail.com</a>
+        </p>
+
+        <div class="contact-cta">
+          <a class="btn btn-primary" href="mailto:vishnumamidala07@gmail.com">Email Me</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h3>Location</h3>
+        <p>India</p>
+
+        <h3>Availability</h3>
+        <p>Open for internships & frontend/full-stack roles</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Vishnuchaithanya Mamidala</div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const navToggle = document.getElementById("nav-toggle");
+    const siteNav = document.getElementById("site-nav");
+
+    navToggle.addEventListener("click", () => {
+      siteNav.classList.toggle("open");
+    });
+  </script>
+
+</body>
+</html>
